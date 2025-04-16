@@ -1,4 +1,4 @@
-/* Сброс и общие настройки */
+/* Общий сброс и базовые стили */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,12 +7,13 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  font-size: 20px; /* Увеличенный базовый размер шрифта */
+  line-height: 1.6;
   background: linear-gradient(to right, #4b6cb7, #182848);
   color: #fff;
   overflow-x: hidden;
 }
 
-/* Контейнер для центровки */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -36,8 +37,8 @@ body {
 }
 
 .logo a {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 28px; /* Более крупный логотип */
+  font-weight: 700;
   color: #fff;
   text-decoration: none;
 }
@@ -54,7 +55,7 @@ body {
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px; /* Крупные пункты навбара */
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -63,7 +64,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* Hero секция */
+/* Hero-секция */
 .hero {
   position: relative;
   height: 100vh;
@@ -90,23 +91,24 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 48px;
+  font-size: 64px; /* Очень крупный заголовок */
   margin-bottom: 20px;
 }
 
 .hero-content p {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 30px;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 30px;
+  padding: 15px 40px;
   background: #ffcc00;
   color: #333;
   border-radius: 30px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 22px;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
@@ -117,47 +119,49 @@ body {
 
 /* Секции */
 .section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 .section h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
+  font-size: 48px; /* Большой заголовок для разделов */
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .section p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 22px; /* Крупное основное содержание */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Секция Навыки */
+/* Навыки */
 .skills-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  font-size: 20px;
+  font-size: 24px;
+  margin-top: 20px;
 }
 
 .skills-list li {
   background: rgba(255, 255, 255, 0.1);
-  padding: 10px 20px;
+  padding: 15px 30px;
   border-radius: 30px;
 }
 
-/* Grid для проектов */
+/* Проекты */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
 
 .project {
   background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -168,35 +172,37 @@ body {
 }
 
 .project h3 {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
 .project p {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
 .project a {
   color: #ffcc00;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 20px;
 }
 
-/* Footer */
+/* Контакты и футер */
 .footer {
   text-align: center;
   padding: 20px 0;
   background: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
 }
 
-/* Медиа-запросы для адаптивности */
+/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 48px;
   }
   .hero-content p {
-    font-size: 18px;
+    font-size: 28px;
   }
   .nav-links {
     flex-direction: column;
@@ -206,7 +212,7 @@ body {
   }
 }
 
-/* Анимация появления hero-контента */
+/* Анимация появления Hero-контента */
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -218,7 +224,7 @@ body {
   }
 }
 
-/* Анимация появления секций при скролле */
+/* Анимация появления секций при прокрутке */
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);
