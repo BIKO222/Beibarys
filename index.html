@@ -1,53 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме - Бейбарыс Аскар</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме - Бейбарыс Аскар</title>
+  <!-- Подключаем Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@400;700&display=swap">
+  <!-- Подключаем Font Awesome для иконок -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Навигационное меню -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="#hero">Б.А.</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#experience">Опыт</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#skills">Навыки</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </nav>
+  <!-- Главная секция -->
+  <header id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Бейбарыс Аскар</h1>
+      <p>Молодой и амбициозный программист из Казахстана</p>
+      <a href="#projects" class="btn">Мои проекты</a>
+    </div>
+  </header>
 
-    <header class="hero">
-        <h1>Бейбарыс Аскар</h1>
-        <p>Программист | Казахстан</p>
-    </header>
+  <!-- Секция "Обо мне" -->
+  <section id="about" class="section fade-in-section">
+    <div class="container">
+      <h2>Обо мне</h2>
+      <p>Мне 14 лет, я увлекаюсь программированием, создаю современные веб-проекты, экспериментирую с новыми технологиями и постоянно развиваюсь.</p>
+    </div>
+  </section>
 
-    <section id="about">
-        <h2>Обо мне</h2>
-        <p>Мне 14 лет, я изучаю программирование и создаю веб-приложения.</p>
-    </section>
+  <!-- Секция "Навыки" -->
+  <section id="skills" class="section fade-in-section">
+    <div class="container">
+      <h2>Навыки</h2>
+      <ul class="skills-list">
+        <li>HTML, CSS</li>
+        <li>JavaScript, C++</li>
+        <li>Python, ML</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="skills">
-        <h2>Навыки</h2>
-        <ul>
-            <li>HTML, CSS</li>
-            <li>JavaScript, C++</li>
-            <li>Python, ML</li>
-        </ul>
-    </section>
+  <!-- Секция "Опыт работы" -->
+  <section id="experience" class="section fade-in-section">
+    <div class="container">
+      <h2>Опыт работы</h2>
+      <p>Участвовал в школьных проектах, хакатонах и экспериментах с UI/UX. Разрабатывал проекты для друзей и пробовал новые подходы в создании анимаций и интерактивных эффектов.</p>
+    </div>
+  </section>
 
-   <section id="contact">
-    <h2>Связаться со мной</h2>
-       <p>
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/BIKO222" target="_blank">BIKO222</a>
-</p>
-</section>
+  <!-- Секция "Проекты" -->
+  <section id="projects" class="section fade-in-section">
+    <div class="container">
+      <h2>Проекты</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Проект 1</h3>
+          <p>Краткое описание проекта 1</p>
+          <a href="https://github.com/BIKO222/project1" target="_blank">Смотреть на GitHub <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="project">
+          <h3>Проект 2</h3>
+          <p>Краткое описание проекта 2</p>
+          <a href="https://github.com/BIKO222/project2" target="_blank">Смотреть на GitHub <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="project">
+          <h3>Проект 3</h3>
+          <p>Краткое описание проекта 3</p>
+          <a href="https://github.com/BIKO222/project3" target="_blank">Смотреть на GitHub <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Секция "Контакты" -->
+  <section id="contact" class="section fade-in-section">
+    <div class="container">
+      <h2>Контакты</h2>
+      <p>
+        <a href="https://github.com/BIKO222" target="_blank">
+          <i class="fab fa-github"></i> GitHub: BIKO222
+        </a>
+      </p>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Бейбарыс Аскар. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Скрипт для анимаций при скролле -->
+  <script src="script.js"></script>
 </body>
 </html>
