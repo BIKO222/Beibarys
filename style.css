@@ -1,13 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Оставляем только Poppins */
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #4b6cb7, #182848);
     color: white;
     text-align: center;
-}
-body {
-    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -82,4 +79,7 @@ section {
         width: 95%;
         padding: 20px;
     }
+}
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
 }
