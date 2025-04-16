@@ -7,6 +7,7 @@ body {
     text-align: center;
 }
 
+/* Навбар */
 .navbar {
     position: fixed;
     top: 0;
@@ -38,14 +39,17 @@ body {
     color: #ffcc00;
 }
 
+/* Главная секция */
 .hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background: url('hero-bg.jpg') no-repeat center center / cover;
 }
 
+/* Контейнеры */
 section {
     margin: 50px auto;
     padding: 30px;
@@ -55,7 +59,23 @@ section {
     width: 80%;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    section {
+        width: 95%;
+        padding: 20px;
+    }
 }
