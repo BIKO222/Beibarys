@@ -6,6 +6,10 @@ body {
     color: white;
     text-align: center;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 
 /* Навбар */
 .navbar {
