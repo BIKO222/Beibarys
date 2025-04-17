@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px; /* Увеличенный базовый размер шрифта */
+  font-size: 20px; /* Большой базовый шрифт */
   line-height: 1.6;
   background: linear-gradient(to right, #4b6cb7, #182848);
   color: #fff;
@@ -37,7 +37,7 @@ body {
 }
 
 .logo a {
-  font-size: 28px; /* Более крупный логотип */
+  font-size: 28px;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
@@ -55,7 +55,7 @@ body {
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  font-size: 22px; /* Крупные пункты навбара */
+  font-size: 22px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -91,7 +91,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 64px; /* Очень крупный заголовок */
+  font-size: 64px;
   margin-bottom: 20px;
 }
 
@@ -123,13 +123,13 @@ body {
 }
 
 .section h2 {
-  font-size: 48px; /* Большой заголовок для разделов */
+  font-size: 48px;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 .section p {
-  font-size: 22px; /* Крупное основное содержание */
+  font-size: 22px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -151,7 +151,7 @@ body {
   border-radius: 30px;
 }
 
-/* Проекты */
+/* Проекты: Сетка карточек */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -188,7 +188,25 @@ body {
   font-size: 20px;
 }
 
-/* Контакты и футер */
+/* Стилизация ссылки на профиль GitHub */
+.github-link a {
+  display: inline-block;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.github-link a:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Footer */
 .footer {
   text-align: center;
   padding: 20px 0;
@@ -196,7 +214,7 @@ body {
   font-size: 20px;
 }
 
-/* Адаптивность для мобильных устройств */
+/* Адаптив */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 48px;
@@ -212,7 +230,7 @@ body {
   }
 }
 
-/* Анимация появления Hero-контента */
+/* Анимация Hero */
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -224,7 +242,7 @@ body {
   }
 }
 
-/* Анимация появления секций при прокрутке */
+/* Анимация появления секций при скролле */
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);
